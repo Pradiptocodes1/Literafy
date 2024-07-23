@@ -2,3 +2,4 @@ Flask
 reportlab
 mistralai
 requests
+Gunicorn
