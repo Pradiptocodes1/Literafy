@@ -335,6 +335,28 @@ def index():
             font-weight: bold;
             margin-top: 1rem;
         }
+        .button-container {
+            display: flex;
+            gap: 10px;
+        }
+
+        .back-button {
+            padding: 10px 20px;
+            background-color: var(--input-color);
+            color: #333;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: all 0.3s ease;
+            font-size: 0.8em;
+        }
+
+        .back-button:hover {
+            background-color: #A0A78B;
+            color: var(--white-color);
+        }
     </style>
 </head>
 <body>
@@ -342,7 +364,8 @@ def index():
     <form method="post" id="reviewForm">
         <label for="query">Enter your research topic:</label>
         <input type="text" id="query" name="query" required><br><br>
-        <button type="submit" id="submitButton" style="font-size: 0.8em; text-transform: none;">Generate literature review</button>
+        <button type="submit" id="submitButton" style="font-size: 0.8em; text-transform: none;">Generate literature review</button><br>
+        <a href="https://www.citewise.tech/toolkitspage.html"><button type="button" id="backButton" class="back-button">Back</button></a>
         <div class="loader" style="display: none;"></div>
         <div id="successMessage">Generated successfully</div>
     </form>
