@@ -14,7 +14,7 @@ import time
 
 app = Flask(__name__)
 
-MISTRAL_API_KEY = "azyEN3ZYjcvg964D8U99slt0JzY5jG4F"
+MISTRAL_API_KEY = "SKYjG5bL2rn3nnMwhNtXazBs0MFNteih"
 SERPAPI_API_KEY = "c3648cf164f14a2278308e6816b7daea1fd6dac01fe264d9be8edc01b9197c2d"
 
 mistral_client = MistralClient(api_key=MISTRAL_API_KEY)
@@ -80,12 +80,14 @@ def generate_literature_review(papers):
 Title: {title}
 Abstract: {abstract}
 
-Provide a comprehensive summary that includes the following elements:
+Provide a comprehensive summary that includes the following elements, dont include anything which is not in the abstract. Basically everything should be from abstrsct only:
 1. Introduce the paper with its title.
 2. Briefly describe the main focus or problem addressed in the research.
 3. Outline the key methods or approaches used.
 4. Summarize the main findings or conclusions.
 5. If applicable, mention any significant implications or applications of the research.
+
+In the end justify if this research aligns with the research title, give a score out of 10.
 
 Your summary should be a cohesive paragraph that flows naturally and avoids simply restating the abstract. 
 Include the citation number [{i}] at appropriate places within the text, not just at the end."""
