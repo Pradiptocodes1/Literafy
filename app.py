@@ -85,7 +85,8 @@ Provide a comprehensive summary that includes the following elements, dont inclu
 2. Briefly describe the main focus or problem addressed in the research.
 3. Outline the key methods or approaches used.
 4. Summarize the main findings or conclusions.
-5. If applicable, mention any significant implications or applications of the research.
+5. Do not write anything which is not a part of the abstract. Everything should be from the abstract only.
+6. Provide a detailed explanation of future prospects
 
 In the end justify if this research aligns with the research title, give a score out of 10.
 
