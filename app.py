@@ -14,7 +14,7 @@ import time
 
 app = Flask(__name__)
 
-MISTRAL_API_KEY = "SKYjG5bL2rn3nnMwhNtXazBs0MFNteih"
+MISTRAL_API_KEY = "YhQawUzc9ymDAjC1cjXJqBpaIXz4jjPu"
 SERPAPI_API_KEY = "c3648cf164f14a2278308e6816b7daea1fd6dac01fe264d9be8edc01b9197c2d"
 
 mistral_client = MistralClient(api_key=MISTRAL_API_KEY)
